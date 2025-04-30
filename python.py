@@ -1,7 +1,12 @@
 #this is a python file used for documenting our knowledge of python
+
+#DISCRIPTION NEEDED
 spencer = 'lame'
 spencer.find('l')
 
+#finds what is in slot six. you can use negatives to find charachters
+t = 'Hello World'
+print(t[6])
 
 
 
