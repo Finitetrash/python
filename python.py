@@ -2,8 +2,7 @@
 
 #finds character value of given variable
 spencer = 'lame'
-spencer.find('l')
-
+print(spencer.find('l'))
 #finds what is in slot six. you can use negatives to find charachters
 t = 'Hello World'
 print(t[6])
