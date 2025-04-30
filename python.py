@@ -9,7 +9,14 @@ print(index)
 t = 'Hello World'
 print(t[6])
 
+<<<<<<< HEAD
+#finds the length of said string 
+text = 'Hello World'
+print(len(text))
+
+=======
 print('why are you mean')
+>>>>>>> 70568213395d1a84c3b6e7b02f7cd5df068613c3
 
 
 
