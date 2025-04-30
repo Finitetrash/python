@@ -1,7 +1,5 @@
 #this is a python file used for documenting our knowledge of python
 
-
-
 #normal print command
 print('why are you mean')
 
@@ -19,7 +17,9 @@ print(t[6])
 text = 'Hello World'
 print(len(text))
 
-
+#finds the type of code
+text = 'Hello World'
+print(type(text))
 
 
 
