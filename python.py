@@ -1,6 +1,6 @@
 #this is a python file used for documenting our knowledge of python
 
-#DISCRIPTION NEEDED
+#finds character value of given variable
 spencer = 'lame'
 spencer.find('l')
 
