@@ -1,5 +1,10 @@
 #this is a python file used for documenting our knowledge of python
 
+
+
+#normal print command
+print('why are you mean')
+
 #finds character value of given variable
 spencer = 'loser'
 print(spencer.find('l'))
@@ -8,14 +13,9 @@ print(spencer.find('l'))
 t = 'Hello World'
 print(t[6])
 
-<<<<<<< HEAD
 #finds the length of said string 
 text = 'Hello World'
 print(len(text))
-
-=======
-print('why are you mean')
->>>>>>> 70568213395d1a84c3b6e7b02f7cd5df068613c3
 
 
 
