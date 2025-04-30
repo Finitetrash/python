@@ -6,7 +6,8 @@ print('why are you mean')
 #finds character value of given variable
 #finds character value of given variable and prints it under a new variable
 spencer = 'loser'
-index = print(spencer.find('l'))
+hello = 'are you sure this works?'
+index = print(hello.find(spencer[1]))
 print(index)
 
 #finds what is in slot six. you can use negatives to find charachters
