@@ -19,8 +19,17 @@ text = 'Hello World'
 print(len(text))
 
 #finds the type of code
-text = 'Hello World'
 print(type(text))
+
+#how to use the .lower command
+ys = 'YOU SUCK'
+print(ys.lower())
+
+#using lower w/ find
+text = 'Hello World'
+alphabet = 'abcdefghijklmnopqrstuvwxyz'
+index = alphabet.find(text[0].lower())
+print(index)
 
 
 
