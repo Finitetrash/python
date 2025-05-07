@@ -30,9 +30,9 @@ def vigenere(message, key, direction=1):
 # Encrypt or decrypt based on user choice
 if mode == 'encrypt':
     result = vigenere(text, custom_key, direction=1)
-    print(f"\nEncrypted message: {result}")
+    print(f"\nEncrypted message: {result}\n\n\n\n\n")
 elif mode == 'decrypt':
     result = vigenere(text, custom_key, direction=-1)
-    print(f"\nDecrypted message: {result}")
+    print(f"\nDecrypted message: {result}\n\n\n\n\n")
 else:
     print("\nInvalid option. Please enter encrypt or decrypt.")
