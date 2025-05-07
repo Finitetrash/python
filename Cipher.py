@@ -1,6 +1,13 @@
-text = input()
-custom_key = 'randomkey'
+# Ask user if they want to encrypt or decrypt
+mode = input("Do you want to encrypt or decrypt? ").lower()
 
+# Ask for the text to process
+text = input("Enter your message: ")
+
+# Ask for the key
+custom_key = input("Enter the key: ").lower()
+
+# Vigenère cipher function
 def vigenere(message, key, direction=1):
     key_index = 0
     alphabet = 'abcdefghijklmnopqrstuvwxyz'
@@ -9,27 +16,23 @@ def vigenere(message, key, direction=1):
     for char in message.lower():
         if not char.isalpha():
             final_message += char
-        else:        
+        else:
             key_char = key[key_index % len(key)]
             key_index += 1
 
             offset = alphabet.index(key_char)
             index = alphabet.find(char)
-            new_index = (index + offset*direction) % len(alphabet)
+            new_index = (index + offset * direction) % len(alphabet)
             final_message += alphabet[new_index]
-    
+
     return final_message
 
-def encrypt(message, key):
-    return vigenere(message, key)
-
-def decrypt(message, key):
-    return vigenere(message, key, -1)
-
-encryption = encrypt(text, custom_key)
-decryption = decrypt(encryption, custom_key)
-
-print(f'\nOriginal text: {text}')
-print(f'Key: {custom_key}')
-print(f'Encrypted text: {encryption}')
-print(f'Decrypted text: {decryption}')
+# Encrypt or decrypt based on user choice
+if mode == 'encrypt':
+    result = vigenere(text, custom_key, direction=1)
+    print(f"\nEncrypted message: {result}")
+elif mode == 'decrypt':
+    result = vigenere(text, custom_key, direction=-1)
+    print(f"\nDecrypted message: {result}")
+else:
+    print("\nInvalid option. Please enter encrypt or decrypt.")
