@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request
 
+return render_template("index.html", result=result)
+
 app = Flask(__name__)
 
 # Vigenère cipher function
