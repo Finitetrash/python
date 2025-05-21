@@ -13,11 +13,16 @@ body {
 }
 
 textarea, input, select, button {
-    width: 100%;
+    width: 90%;
     margin-top: 10px;
     margin-bottom: 20px;
+    margin: left 20px;;
+    margin: right 20px;;
     padding: 10px;
     font-size: 1rem;
+}
+.label {
+    text-align: justify;
 }
 
 .result {
