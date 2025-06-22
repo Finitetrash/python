@@ -23,6 +23,7 @@ textarea, input, select, button {
 }
 .label {
     text-align: left;
+    margin-right: 800px;
 }
 
 .result {
