@@ -1,21 +1,26 @@
-data = [1, 0, 7, 4, -9, 4, 2]
-
-def sort_data(data):
-    data.sort()
+def read_data_from_file(dataset):
+    with open(dataset, 'r') as file:
+        content = file.read()
+        # Split by comma and convert each item to an integer
+        data = [int(x.strip()) for x in content.split(',')]
     return data
 
-sorted_data = sort_data(data)
+def sort_data(data):
+    return sorted(data)
 
 def run_sorted(data):
-    for DataSet in data:
-        if DataSet == 0:
+    for dataset in data:
+        if dataset == 0:
             print("no income or loss")
-        elif DataSet > 0:
-            print(f"income: {DataSet}")
+        elif dataset > 0:
+            print(f"income: {dataset}")
         else:
-            print(f"loss: {DataSet}")
+            print(f"loss: {dataset}")
 
+# Read from dataset.txt
+data = read_data_from_file('dataset.txt')
+sorted_data = sort_data(data)
 run_sorted(sorted_data)
 
-print(f"total income: {sum(data)}")
+print(f"total: {sum(data)}")
  
